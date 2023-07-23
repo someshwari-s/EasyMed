@@ -1,0 +1,202 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Gramin Arogya</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+  </head>
+  <body>
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-md navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/images/award.png" class="img-fluid" width="52px">
+        GraminArogya</a>
+      <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="AdminLogin.html">Admin</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="ArogyaLogin.html">Arogya Vibhag Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="DoctorLogin.html">Doctors</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</section>
+
+
+  <!-- //w3l-features-photo-7 -->
+
+
+<section class="w3l-apply-6" id="appointment">
+	<!-- /apply-6-->
+	<div class="apply-info py-5">
+		<div class="container py-lg-5 py-sm-3">
+			<div class="apply-grids-info row">
+				<div class="apply-gd-left col-lg-5">
+					<h4>ADMIN LOGIN</h4>
+					<!--<p class="para-apply">FOR FORGOT PASSWORD PLEASE CONTACT DEVELOPER
+						<br><strong>Emergency?</strong> Call 8956111106
+					</p>-->
+					<div class="mt-lg-5 mt-4">
+						<div class="sub-apply mt-5">
+							<div class="apply-sec-info">
+								
+								
+							</div>	
+						</div>
+						<div class="sub-apply mt-5">
+							<div class="apply-sec-info">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="apply-gd-right offset-lg-1 col-lg-6 mt-lg-0 mt-5">
+					<div class="apply-form p-sm-5 p-4">
+						<h5>Admin Login page</h5>
+						<form action="AdminLogin" method="post" autocomplete="off">
+							<div class="admission-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Admin Id*" name="aid">
+								</div>
+								
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password*" name="password">
+								</div>
+								
+							</div>
+							
+							<button type="submit" class="btn btn-primary submit">Submit Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    
+    <script src="assets/js/green-audio-player.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new GreenAudioPlayer('.ready-player-1', { stopOthersOnPlay: true });
+        });
+    </script>
+
+    <!-- video popup -->
+    <script>
+      $('#notify').change(function () {
+        if ($('#notify').is("Active")) {
+          $('body').css('overflow', 'hidden');
+        } else {
+          $('body').css('overflow', 'auto');
+        }
+      });
+    </script>
+    <!-- //video popup -->
+
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for banner slider-->
+    <script>
+      $(document).ready(function () {
+        $('.owl-one').owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            480: {
+              items: 1,
+              nav: false
+            },
+            667: {
+              items: 1,
+              nav: true
+            },
+            1000: {
+              items: 1,
+              nav: true
+            }
+          }
+        })
+      })
+    </script>
+    <!-- //script -->
+    
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>

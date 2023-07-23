@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Table 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Table #09</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-striped">
+						      <thead>
+         <tr>
+         <td><h3><b>EID</b></h3></td>
+                                                 <td><h3><b>NAME</b></h3></td>
+                                                   <td><h3><b>password</b></h3></td>
+                                                    <td><h3><b>Specialist</b></h3></td>
+                                                   
+
+         </tr>
+         
+                                          <%
+                                          try{
+                                       
+                                         Connection con=null;
+                                          Class.forName("com.mysql.jdbc.Driver");
+      									System.out.println("Class execute");
+      									con=DriverManager.getConnection("jdbc:mySql://localhost:3306/hospital","root","");
+      									Statement stmt=con.createStatement();
+      									ResultSet rs=stmt.executeQuery("select *from doctor");
+                                          while(rs.next()){
+                                          %>
+                                          <tbody>
+                                                    <tr>
+                                                   <td><%out.print(rs.getInt(1)); %></td>
+                                  <td><%out.print(rs.getString(2)); %></td>
+                                  <td><%out.print(rs.getString(3)); %></td>
+                                   <td><%out.print(rs.getString(4)); %></td>
+                                                    </tr>
+                                          </tbody>
+                                                   <%
+                                                   }
+                                                   //connection.close();
+                                                   } catch (Exception e) {
+                                                   e.printStackTrace();
+                                                   }
+                                                   %>
+         
+</thead>
+</table> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
